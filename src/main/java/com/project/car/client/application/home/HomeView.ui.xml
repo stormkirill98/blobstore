@@ -1,0 +1,16 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'
+             xmlns:b="urn:import:org.gwtbootstrap3.client.ui">
+
+    <g:HTMLPanel>
+        <b:Row marginLeft="15" marginTop="15">
+            <g:FormPanel encoding="multipart/form-data" method="post" ui:field="uploadForm">
+                <g:FileUpload name="myImage" ui:field="fileUpload" />
+            </g:FormPanel>
+        </b:Row>
+
+        <b:Button ui:field="submit" text="Submit" marginLeft="15" marginTop="15"/>
+
+        <g:Image ui:field="img"/>
+    </g:HTMLPanel>
+</ui:UiBinder>
