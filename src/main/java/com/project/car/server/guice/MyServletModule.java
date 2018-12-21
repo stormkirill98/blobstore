@@ -22,7 +22,7 @@ public class MyServletModule extends ServletModule {
         // my servlets
         bind(UploadServlet.class).in(Singleton.class);
         serve(NameTokens.UPLOAD_PATH).with(UploadServlet.class);
-        serve(NameTokens.SERVE_PATH).with(UploadServlet.class);
+        //serve(NameTokens.SERVE_PATH).with(UploadServlet.class);
 
 /*        bind(ServeServlet.class).in(Singleton.class);
         serve(NameTokens.SERVE_PATH).with(ServeServlet.class);*/

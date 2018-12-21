@@ -33,7 +33,7 @@ public class UploadServlet extends HttpServlet {
             System.out.println("            blobKeys[0] = " + blobKeys.get(0).getKeyString());
             System.out.println("            blobKeys.size = " + blobKeys.size());
 
-            res.sendRedirect("/serve?blob-key=" + blobKeys.get(0).getKeyString());
+            res.sendRedirect("/upload?blob-key=" + blobKeys.get(0).getKeyString());
         }
     }
 

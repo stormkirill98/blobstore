@@ -69,11 +69,6 @@ public class HomeView extends ViewWithUiHandlers<HomePresenter> implements HomeP
         GWT.log("setActionUploadForm uploadUrl = " + uploadUrl);
 
         uploadForm.setAction(uploadUrl);
-    }
-
-    @UiHandler("submit")
-    public void onSubmit(ClickEvent event){
-        GWT.log("onSubmit");
         uploadForm.submit();
     }
 }

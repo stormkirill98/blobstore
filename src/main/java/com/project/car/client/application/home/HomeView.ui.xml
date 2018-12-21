@@ -8,9 +8,8 @@
                 <g:FileUpload name="myImage" ui:field="fileUpload" />
             </g:FormPanel>
         </b:Row>
-
-        <b:Button ui:field="submit" text="Submit" marginLeft="15" marginTop="15"/>
-
-        <g:Image ui:field="img"/>
+        <b:Row>
+            <g:Image ui:field="img"/>
+        </b:Row>
     </g:HTMLPanel>
 </ui:UiBinder>
